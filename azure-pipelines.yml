@@ -13,3 +13,11 @@ steps:
     sdk: 'iphoneos'
     configuration: 'Release'
     xcodeVersion: '10' # Options: 8, 9, default, specifyPath
+- task: XcodePackageiOS@0
+  inputs:
+    appName: 'name.app' 
+    ipaName: 'name.ipa' 
+    provisioningProfile: 
+    sdk: 'iphoneos' 
+    appPath: '$(SDK)/$(Configuration)/build.sym/$(Configuration)-$(SDK)' 
+    ipaPath: '$(SDK)/$(Configuration)/build.sym/$(Configuration)-$(SDK)/output' 
