@@ -10,7 +10,7 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegateX: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponderX, UIApplicationDelegate {
 
     var window: UIWindow?
 
